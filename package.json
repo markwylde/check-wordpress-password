@@ -1,0 +1,27 @@
+{
+  "name": "check-wordpress-password",
+  "description": "Check a WordPress generated password hash against a password",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx --test index.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "wordpress",
+    "phpass"
+  ],
+  "author": {
+    "email": "mark@wylde.net",
+    "name": "Mark Wylde",
+    "url": "https://markwylde.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
